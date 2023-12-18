@@ -1,0 +1,6 @@
+.tarjeta{
+width: calc(100%/5);
+height: 350px;
+border: 1px solid gray;
+border-radius: 5px;
+}

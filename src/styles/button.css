@@ -1,0 +1,21 @@
+.accion{
+    background-color: rgba(5, 158, 5, 0.918);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.info{
+    background-color: rgba(218, 214, 10, 0.945);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.atencion{
+    background-color: rgba(240, 52, 6, 0.945);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}

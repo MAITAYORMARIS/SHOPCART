@@ -1,0 +1,13 @@
+.contenedorLista{
+    width: 90vw;
+    margin-left: 5vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    row-gap: 20px;
+
+}
