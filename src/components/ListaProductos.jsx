@@ -4,7 +4,7 @@ import TarjetaProducto from './TarjetaProducto';
 import '../styles/listaProductos.css';
 
 function ListaProductos() {
-    const dataProductos  = useContext(AppContext);
+    const {dataProductos}  = useContext(AppContext);
    
     return (
         <>
