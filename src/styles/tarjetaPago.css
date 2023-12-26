@@ -1,0 +1,88 @@
+.tarjetaPago{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 10px;
+    color: wheat;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.simbolosCard{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contenedorChip{
+    width: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorChip>img{
+    max-width: 100%;
+    min-width: 100%;
+   object-fit: contain;
+}
+.tituloCard{
+height: 20%;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+}
+.numerosCard{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 0;
+}
+.numeroTarjeta{
+    height: 90%;
+    line-height: 80%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+}
+.codigo{
+    width: 100%;
+    text-align: start;
+    height: 10%;
+    font-size: 10px;
+}
+.fechaCard{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 12px;
+}
+.nombreCard{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 14px;
+}

@@ -6,7 +6,7 @@ import Carrito from './Carrito';
 
 
 function Header() {
-    const { carrito } = useContext(AppContext);
+    const { carrito, resetCompra} = useContext(AppContext);
     const [mostrarCarrito, setMostrarCarrito] = useState(false);
     const handleClick = () => {
         // Cambia el estado para mostrar u ocultar el carrito
@@ -19,10 +19,13 @@ function Header() {
     }
 
     const totalProductos = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+    const handleLogoClick = () => {
+        resetCompra();  
+    }
     return (
         <>
             <div className="contenedorHeader">
-                <div className="contenedorLogo"><img src="https://picsum.photos/200/300?random=2" alt="logo" /></div>
+                <div className="contenedorLogo" onClick={handleLogoClick}><img src="https://firebasestorage.googleapis.com/v0/b/mi-proyecto-de-recetas.appspot.com/o/fotos-proyecto-alkemy%2FEcommerce_Shopping_Logo__1_-removebg-preview.png?alt=media&token=5c9d7dc8-e40b-441a-b7cf-0bf7646ed6f6" alt="logo" /></div>
                 <div className="contenidoHeader">
                     <h1>Shop Cart</h1>
                 </div>

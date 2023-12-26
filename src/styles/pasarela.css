@@ -1,0 +1,46 @@
+.contenedorPasarela {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedorForm{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.contenedorTarjeta{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    
+}
+.formularioPasarela{
+    width: 90%;
+    height: auto;
+}
+.entradasPasarela{
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+}
+label{
+    width: 30%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+input{
+    width: 70%;
+    border-radius: 5px;
+    border:1px solid gray;
+}

@@ -1,4 +1,4 @@
-.contenedorCarrito{
+.contenedorCarrito {
     width: 40vw;
     height: auto;
     display: flex;
@@ -6,32 +6,35 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(231, 240, 217, 0.815);
-    position: fixed; 
-    top: 100px; 
+    position: fixed;
+    top: 100px;
     right: 0;
-    padding: 10px; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
-    z-index: 1000; 
-    visibility: hidden; 
-    opacity: 0; 
-    transition: visibility 0s, opacity 0.5s linear; 
-    color:black;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    color: black;
 }
+
 .contenedorCarrito.visible {
     visibility: visible;
     opacity: 1;
 }
-.itemsCarrito{
+
+.itemsCarrito {
     width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    margin-bottom: 10px; 
+    background-color: rgba(128, 128, 128, 0.534);
+    margin-bottom: 10px;
 }
-.itemsCarritoImagen{
+
+.itemsCarritoImagen {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,12 +42,15 @@
     width: 20%;
     height: 100%;
 }
-.itemsCarritoImagen>img{
+
+.itemsCarritoImagen>img {
     min-width: 100%;
     max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
-.itemsCarritoNombre{
+
+.itemsCarritoNombre {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +59,8 @@
     height: 100%;
     text-align: center;
 }
-.accionesCarrito{
+
+.accionesCarrito {
     width: 30%;
     height: 100%;
     display: flex;
@@ -61,8 +68,17 @@
     justify-content: center;
     align-items: center;
     /* background-color: black; */
-   column-gap: 2%;
+    column-gap: 2%;
 }
-.cantidadItem{
+
+.cantidadItem {
     width: 30%;
+}
+
+.botonesCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
 }
