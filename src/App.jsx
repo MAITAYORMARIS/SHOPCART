@@ -6,6 +6,7 @@ import PasarelaPago from './components/PasarelaPago';
 import AppContext from './context/AppContext';
 import ListaProductos from './components/ListaProductos';
 import ResumenCompra from './components/ResumenCompra';
+import Footer from './components/Footer'
 import axios from 'axios';
 
 
@@ -81,7 +82,7 @@ function App() {
           <h1>Conoce nuestros Productos</h1>
           <ListaProductos />
         </div> */}
-
+<Footer />
       </AppContext.Provider>
 
     </>

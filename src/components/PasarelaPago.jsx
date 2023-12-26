@@ -138,33 +138,33 @@ function PasarelaPago() {
                     <form onSubmit={handleSubmit} className="formularioPasarela">
                         <div className="entradasPasarela">
                             <label htmlFor="nombre" >Nombre</label>
-                            <input type="text" id="nombre" name="nombre" value={formData.nombre || ""} onChange={handleChange} />
+                            <input type="text" id="nombre" name="nombre" value={formData.nombre || ""} onChange={handleChange} placeholder="Ingresa tu nombre"/>
                             {errors.nombre && <p className="error-message">{errors.nombre}</p>}
                         </div>
                         <div className="entradasPasarela">
                             <label htmlFor="apellido" >Apellido</label>
-                            <input type="text" id="apellido" name="apellido" value={formData.apellido || ""} onChange={handleChange} />
+                            <input type="text" id="apellido" name="apellido" value={formData.apellido || ""} onChange={handleChange} placeholder="Ingresa tu apellido"/>
                             {errors.apellido && <p className="error-message">{errors.apellido}</p>}
                         </div>
                         <div className="entradasPasarela">
                             <label htmlFor="correo" >Email</label>
-                            <input type="email" id="correo" name="correo" value={formData.correo || ""} onChange={handleChange} />
+                            <input type="email" id="correo" name="correo" value={formData.correo || ""} onChange={handleChange} placeholder="micorreo@correo.com"/>
                             {errors.correo && <p className="error-message">{errors.correo}</p>}
                         </div>
                         <div className="entradasPasarela">
                             <label htmlFor="telefono" >Telefono</label>
-                            <input type="number" id="telefono" name="telefono" value={formData.telefono || ""} onChange={handleChange} />
+                            <input type="number" id="telefono" name="telefono" value={formData.telefono || ""} onChange={handleChange} placeholder="Ingresa los 10 digitos de tu Celular"/>
                             {errors.telefono && <p className="error-message">{errors.telefono}</p>}
                         </div>
                         {/* datos de la tarjeta */}
                         <div className="entradasPasarela">
                             <label htmlFor="nroTarjeta" >N° Tarjeta</label>
-                            <input type="number" id="nroTarjeta" name="nroTarjeta" value={formData.nroTarjeta || ""} onChange={handleChange} />
+                            <input type="number" id="nroTarjeta" name="nroTarjeta" value={formData.nroTarjeta || ""} onChange={handleChange} placeholder="Ingresa los 16 digitos de la tarjeta"/>
                             {errors.nroTarjeta && <p className="error-message">{errors.nroTarjeta}</p>}
                         </div>
                         <div className="entradasPasarela">
                             <label htmlFor="nombreTarjeta" >Nombre en la Tarjeta</label>
-                            <input type="text" id="nombreTarjeta" name="nombreTarjeta" value={formData.nombreTarjeta || ""} onChange={handleChange} />
+                            <input type="text" id="nombreTarjeta" name="nombreTarjeta" value={formData.nombreTarjeta || ""} onChange={handleChange} placeholder="Ingresa el nombre que aparece en la tarjeta"/>
                             {errors.nombreTarjeta && <p className="error-message">{errors.nombreTarjeta}</p>}
                         </div>
                         <div className="entradasPasarela">
@@ -174,7 +174,7 @@ function PasarelaPago() {
                         </div>
                         <div className="entradasPasarela">
                             <label htmlFor="codigoTarjeta" >CVV</label>
-                            <input type="number" id="codigoTarjeta" name="codigoTarjeta" value={formData.codigoTarjeta || ""} onChange={handleChange} />
+                            <input type="number" id="codigoTarjeta" name="codigoTarjeta" value={formData.codigoTarjeta || ""} onChange={handleChange} placeholder="Tres digitos del reverso"/>
                             {errors.codigoTarjeta && <p className="error-message">{errors.codigoTarjeta}</p>}
                         </div>
                         <Button type="submit" className="accion" titulo="Pagar" />
